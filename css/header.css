@@ -1,0 +1,263 @@
+/* ============================= Header Section ========================= */
+.sidebar {
+  display: none;
+}
+
+.logo > img {
+  width: 151px;
+  height: 46px;
+  position: relative;
+  left: 95px;
+  transition: all 0.4s ease;
+}
+
+.logo {
+  transition: all 0.4s ease;
+  position: relative;
+  top: 19%;
+  left: 0;
+  width: 100%;
+}
+
+.logo::before {
+  content: "";
+  display: var(--remove, block);
+  position: absolute;
+  left: 0;
+  bottom: 22px;
+  width: 90px;
+  height: 1px;
+  background-color: #01432b4d;
+  transition: all 0.4s ease;
+}
+
+.logo::after {
+  content: "";
+  position: absolute;
+  display: var(--remove, block);
+  right: -255px;
+  bottom: 22px;
+  width: 100%;
+  height: 1px;
+  background-color: #01432b4d;
+  transition: all 0.4s ease;
+}
+
+.onscroll-logo {
+  top: -20%;
+  left: -2%;
+}
+
+#menu {
+  display: none;
+  position: absolute;
+  top: 30%;
+  right: 2%;
+  color: #1b4427;
+  font-size: 2rem;
+  transition: all 0.4s ease;
+}
+
+.onscroll-menu {
+  top: 5%;
+}
+
+#close {
+  position: absolute;
+  top: 3%;
+  right: 3%;
+  color: #abde63;
+  font-size: 2rem;
+}
+
+#header-section {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  overflow: hidden;
+  z-index: 999;
+  transition: all 0.4s ease;
+  height: 80px;
+}
+
+.scroll-up {
+  top: -60px !important;
+}
+
+.scroll-down {
+  top: 0px !important;
+}
+
+.onscroll-header {
+  height: 60px !important;
+}
+
+.sticky {
+  position: sticky;
+  background-color: rgb(255, 255, 255,0.5);
+  padding-top: 1rem;
+  z-index: 3;
+}
+
+#header-section ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5.5rem;
+  position: absolute;
+  right: 3%;
+  top: 18%;
+  transition: all 0.4s ease;
+}
+
+.onscroll-ul {
+  top: 23% !important;
+}
+
+#header-section ul li {
+  position: relative;
+}
+
+#header-section ul li:nth-child(4) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.line-3 {
+  position: absolute;
+  top: -59%;
+  left: -40%;
+}
+
+#header-section ul li a {
+  text-transform: uppercase;
+}
+
+#header-section ul li a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  height: 3px;
+  width: 100%;
+  background-color: #01432b;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.4s ease-out;
+}
+
+#header-section ul li a:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* ====================== Responsive Header CSS ========================= */
+
+@media (max-width: 991px) {
+  .logo > img {
+    width: 120px;
+    height: 46px;
+    position: relative;
+    left: 20px;
+  }
+
+  .logo::before {
+    display: none;
+  }
+
+  .logo::after {
+    display: none;
+  }
+
+  .onscroll-logo {
+    top: -20%;
+    left: 0;
+  }
+
+  #header-section {
+    height: 60px;
+  }
+
+  #header-section ul {
+    display: none;
+  }
+
+  #menu {
+    display: block;
+    top: 17%;
+  }
+
+  #close {
+    top: 1%;
+    right: 2%;
+  }
+
+  .onscroll-menu {
+    top: 5% !important;
+  }
+
+  .sidebar {
+    display: block;
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    height: 100vh;
+    background: rgba(1, 67, 43, 0.90);
+    backdrop-filter: blur(8px);
+    left: -100%;
+    transition: all 0.6s ease; display: flex; justify-content: center; align-items: center; flex-direction: column;
+  }
+
+  .sidebar ul {
+    /*height: 100vh;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10vh 0;
+    margin: 0;
+    position: relative;
+    width: 85%; margin: 10vh auto;
+    /*border: 1px solid; border-image-source: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 53.47%, rgba(255, 255, 255, 0) 100%);*/
+  }
+  .sidebar ul:after{content: ''; position: absolute; left: 0; top: 0; width: 100%; height: 2px; background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 53.47%, rgba(255, 255, 255, 0) 100%); }
+  .sidebar ul:before{content: ''; position: absolute; left: 0; bottom: 0; width: 100%; height: 2px; background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 53.47%, rgba(255, 255, 255, 0) 100%); }
+
+  .sidebar ul li a {font-size: 20px;color: #2DA34A;font-weight: 400;line-height: 1.5;letter-spacing: 0.02em;text-align: center;
+  }
+  .menu-btn{text-align: center;}
+  .menu-btn a{font-size: 16px;font-weight: 300;letter-spacing: 0.02em; vertical-align: middle; color: #ffffffa6;}
+  .header-logo img{width: 120px;}
+  .menu-btn a span{margin-right: 7px;}
+  .menu-btn label{font-size: 9px; position: absolute; bottom: 15px; text-align: center; left: 0; width: 100%; color: rgba(255, 255, 255, 0.43);}
+}
+
+@media (max-width: 576px) {
+  .logo > img {
+    width: 100px;
+  }
+
+  .logo {
+    left: -2%;
+  }
+
+  .onscroll-logo {
+    left: -2%;
+  }
+
+  #menu {
+    font-size: 1.8rem;
+    top: 25%;
+  }
+
+  .onscroll-menu {
+    top: 9% !important;
+  }
+}

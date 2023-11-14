@@ -1,0 +1,90 @@
+@font-face {
+    font-family: 'Citrus Gothic Inline';
+    src: url('CitrusGothicInline-Regular.woff2') format('woff2'),
+        url('CitrusGothicInline-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Citrus Gothic Inline';
+    src: url('CitrusGothicInline-Italic.woff2') format('woff2'),
+        url('CitrusGothicInline-Italic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Citrus Gothic Rough';
+    src: url('CitrusGothicRough-Italic.woff2') format('woff2'),
+        url('CitrusGothicRough-Italic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Citrus Gothic';
+    src: url('CitrusGothic-Italic.woff2') format('woff2'),
+        url('CitrusGothic-Italic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Citrus Gothic';
+    src: url('CitrusGothic-Regular.woff2') format('woff2'),
+        url('CitrusGothic-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Citrus Gothic Shadow';
+    src: url('CitrusGothicShadow-Italic.woff2') format('woff2'),
+        url('CitrusGothicShadow-Italic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Citrus Gothic Rough';
+    src: url('CitrusGothicRough-Regular.woff2') format('woff2'),
+        url('CitrusGothicRough-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Citrus Gothic Shadow';
+    src: url('CitrusGothicShadow-Regular.woff2') format('woff2'),
+        url('CitrusGothicShadow-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Citrus Gothic Solid';
+    src: url('CitrusGothicSolid-Italic.woff2') format('woff2'),
+        url('CitrusGothicSolid-Italic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Citrus Gothic Solid';
+    src: url('CitrusGothicSolid-Regular.woff2') format('woff2'),
+        url('CitrusGothicSolid-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

@@ -1,0 +1,182 @@
+@font-face {
+  font-family: "Bebas Kai Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Bebas Kai Regular"),
+    url("../css/fonts/BebasKai-Regular.woff") format("woff");
+    font-display: swap;
+}
+/* =========================== Common Classes ================================= */
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #01432b;
+}
+
+.roboto {
+  font-family: "Roboto", sans-serif;
+}
+
+.roboto700{
+  font-family: "Roboto Bold";
+}
+
+.bebas {
+  font-family: "Bebas Kai Regular";
+}
+
+.gothic {
+  font-family: "Citrus Gothic";
+}
+
+.din {
+  font-family: "Din Condensed";
+}
+
+.text-lightgreen {
+  color: #abde63;
+}
+
+.text-deepgreen {
+  color: #01432b;
+}
+
+.text-orangish {
+  color: #d7a45c;
+}
+
+.bg-deepgreen {
+  background-color: #01432b;
+}
+
+.text-greenish {
+  color: #2b8140;
+}
+
+.text-whitealter {
+  color: #d9d9d9;
+}
+
+.common-heading-1 {
+  font-size: 64px;
+  line-height: 1;
+  font-weight: 400;
+}
+
+.common-heading-2 {
+  font-size: 96px;
+  line-height: 1;
+  font-weight: 400;
+}
+
+.common-p {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+
+.common-btn {
+  width: 147px;
+  height: 43px;
+}
+
+.common-bg {
+  background-image: url("../assets/greenbg.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.common-section {
+  width: 100%;
+  max-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+/* =========================== Common Responsive ================================= */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .common-heading-1 {
+    font-size: 50px;
+  }
+
+  .common-heading-2 {
+    font-size: 70px;
+  }
+
+  .common-section {
+    max-height: none;
+  }
+
+  .common-btn {
+    width: 120px;
+    height: 40px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 991px) {
+  .common-heading-1 {
+    font-size: 50px;
+  }
+
+  .common-heading-2 {
+    font-size: 70px;
+  }
+
+
+  .common-btn {
+    width: 120px;
+    height: 40px;
+    font-size: 15px;
+  }
+
+  .common-section {
+    max-height: none;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+  .common-heading-1{
+    font-size: 30px;
+  }
+
+	.common-heading-2{
+    font-size: 45px;
+  }
+
+  .common-btn {
+    width: 110px;
+    height: 40px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .common-heading-1{
+    font-size: 30px;
+  }
+
+	.common-heading-2{
+    font-size: 45px;
+  }
+
+  .common-heading-3 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .common-btn {
+    width: 110px;
+    height: 40px;
+    font-size: 14px;
+  }
+}
